@@ -11,9 +11,10 @@ Senior Full Stack Developer and team lead with 9+ years of experience building w
 
 ## Selected work
 
-- **EaseWell:** AI wellbeing companion for web, iOS, and Android, built with React Native and Expo. Includes subscriptions, Stripe payments, and push notifications with deep links.
-- **Web3 Payment Solutions:** Token launch platform, directories, dashboards, and a Web3 wallet using Angular, Reown, Ethers.js, Fireblocks, and D3.js.
-- **Charac:** Pharmacy appointment platform for web and mobile, with video consultations, payments, appointment scheduling, and NHS repeat-prescription integration.
+- **EaseWell:** AI wellbeing companion for web, iOS, and Android, built with React Native and Expo. Includes subscriptions, Stripe payments, and push notifications with deep links. [Web app](https://d2119pfbyf5677.cloudfront.net/auth/login)
+- **Web3 Payment Solutions:** Token launch platform, directories, and dashboards using Angular, Reown, Ethers.js, and D3.js. [Website](https://web3paymentsolutions.io/)
+- **Web3 wallet:** Wallet built with Fireblocks and Reown APIs. [Best Wallet](https://app.bestwallet.com/en/authenticate/sso)
+- **Charac:** Pharmacy appointment platform for web and mobile, with video consultations, payments, appointment scheduling, and NHS repeat-prescription integration. [Web](https://charac.co.uk/) · [Android](https://play.google.com/store/apps/details?id=com.agkiya.charac&hl=en_IN) · [iOS](https://apps.apple.com/gb/app/charac/id1567389036)
 - **CINTRAL:** NielsenIQ project-file and cost-sheet application with Microsoft Graph, Excel integration, Azure SSO, React, and Node.js.
 - **COMPLUS:** CRM for sales, quotations, purchase orders, and invoices, built with Angular, Node.js, Express, and MySQL.
 - **Store Insights:** Client-specific dashboards and reusable chart widgets built with Angular and NVD3.
