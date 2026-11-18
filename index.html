@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chethan K V – Senior Full Stack Developer</title>
+<meta name="description" content="Senior Full Stack Developer with 9+ years on MEAN / MERN, Web3 and React Native.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--surface:#fff;--ink:#101a33;--muted:#53607a;--line:#cfd6e2;--accent:#2b4fe0;--accent-ink:#fff;--mark:#ffd45c;
+--display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1324;--surface:#151d34;--ink:#eaeefb;--muted:#9aa6c4;--line:#2a3555;--accent:#8aa2ff;--accent-ink:#0d1324;--mark:#e8bd3a}}
+:root[data-theme="dark"]{--bg:#0d1324;--surface:#151d34;--ink:#eaeefb;--muted:#9aa6c4;--line:#2a3555;--accent:#8aa2ff;--accent-ink:#0d1324;--mark:#e8bd3a}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;height:56px}
+.nav b{font:700 18px var(--display)}
+.nav nav{display:flex;gap:18px;font-size:15px;overflow-x:auto}
+.nav nav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.nav nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 40px}
+.hero h1{font:800 clamp(52px,11vw,132px)/.92 var(--display);letter-spacing:-.03em;margin:0 0 28px}
+.hero h1 span{display:block}
+.hero p.lead{font-size:clamp(19px,2.4vw,24px);max-width:34em;margin:0 0 28px}
+.hero mark{background:linear-gradient(transparent 58%,var(--mark) 58%);color:inherit}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+/* career bar */
+.career{padding:24px 0 56px}
+.bar{position:relative;display:grid;grid-template-columns:2.6fr 2.4fr 5fr 5.6fr;gap:4px;margin-top:14px}
+.seg{padding:14px 16px;border-radius:10px;background:var(--surface);border:1px solid var(--line);min-height:92px}
+.seg small{display:block;color:var(--muted);font-size:13px}
+.seg strong{font:700 17px/1.25 var(--display);display:block}
+.seg.now{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.seg.now small{color:inherit;opacity:.85}
+.ticks{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;margin-top:6px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:800 clamp(30px,5vw,46px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 32px}
+.proj{display:grid;grid-template-columns:240px 1fr;gap:12px 40px;padding:28px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj h3{font:700 22px/1.2 var(--display);margin:0 0 6px}
+.proj .meta{color:var(--muted);font-size:15px;margin:0}
+.proj p{margin:0 0 10px;max-width:62ch}
+.proj ul{margin:0;padding-left:20px;max-width:66ch}
+.proj li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:13.5px;padding:3px 11px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px 40px}
+.skills h3{font:700 18px var(--display);margin:0 0 8px}
+.skills p{margin:0;color:var(--muted)}
+.soft{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px 40px;margin-top:40px;padding-top:32px;border-top:1px solid var(--line)}
+.soft h3{font:700 16px var(--display);margin:0 0 4px}
+.soft p{margin:0;font-size:15.5px;color:var(--muted)}
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px 40px}
+.awards h3{font:700 20px var(--display);margin:0 0 6px}
+.awards p{margin:0;color:var(--muted)}
+.years{display:flex;gap:10px;margin-bottom:12px}
+.years span{font:800 28px var(--display);background:var(--mark);color:#101a33;padding:2px 12px;border-radius:8px}
+.contact{text-align:left}
+.contact a.mail{font:800 clamp(24px,5vw,52px)/1.1 var(--display);letter-spacing:-.02em;word-break:break-all}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){
+ .proj{grid-template-columns:1fr}
+ .bar{grid-template-columns:1fr}
+ .ticks{display:none}
+ .hero{padding-top:44px}
+}
+@media (prefers-reduced-motion:no-preference){
+ .hero h1 span{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+ .hero h1 span:nth-child(2){animation-delay:.1s}
+ @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<b>Chethan K V</b>
+<nav aria-label="Sections"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#awards">Awards</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<div class="wrap">
+<div class="hero">
+<h1><span>Chethan</span><span>K V</span></h1>
+<p class="lead">Senior Full Stack Developer and team lead. For 9+ years I’ve built web, hybrid and native apps on the <mark>MEAN / MERN stack</mark>, from pharmacy booking to Web3 wallets.</p>
+<div class="cta"><a class="btn primary" href="#work">See my work</a><a class="btn" href="mailto:chethan2136@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/chethan2136/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+
+<div class="career" aria-label="Career timeline">
+<div class="bar">
+<div class="seg"><small>2010 – 2016</small><strong>BCA and MCA</strong></div>
+<div class="seg"><small>Oct 2016 – Nov 2017</small><strong>Junior PHP Developer, Ads Information</strong></div>
+<div class="seg"><small>Jan 2018 – Mar 2023</small><strong>Lead Developer, Lucida Technologies</strong></div>
+<div class="seg now"><small>Apr 2023 – Present</small><strong>SDE IV, Tech Alchemy Studios</strong></div>
+</div>
+</div>
+</div>
+
+<section id="work"><div class="wrap">
+<h2>Selected work</h2>
+
+<article class="proj">
+<div><h3>EaseWell</h3><p class="meta">AI wellbeing companion<br>Tech Alchemy Studios, 2023 – now</p></div>
+<div>
+<p>An AI companion that remembers what matters to each user, and lets them view and delete saved memories. Live on web, iOS and Android in the UK.</p>
+<ul>
+<li>Built web, iOS and Android from a single React Native / Expo codebase.</li>
+<li>Added subscriptions with In-App Purchases on native and Stripe on web, with a 7-day free trial and monthly plan.</li>
+<li>Designed a push-notification framework with deep links that open the right screen.</li>
+</ul>
+<div class="chips"><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">PostgreSQL</span><span class="chip">Stripe</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Web3 Payment Solutions</h3><p class="meta">Token launch platform and wallet<br>Tech Alchemy Studios, 2023 – now</p></div>
+<div>
+<p>A Web3 payment and token launch platform with project and staking directories, a points dashboard and a user dashboard.</p>
+<ul>
+<li>Built Angular 12+ modules with wallet connection through Reown and on-chain calls through Ethers.js, plus D3.js charts.</li>
+<li>Delivered the Project Directory, Staking Directory, Points Dashboard and User Dashboard.</li>
+<li>Led the company’s Web3 wallet, comparable to MetaMask, BestWallet and Phantom, using Fireblocks and Reown APIs.</li>
+<li>Evaluated integration options and built the SSO-based sign-in flow.</li>
+</ul>
+<div class="chips"><span class="chip">Angular 12+</span><span class="chip">Reown</span><span class="chip">Ethers.js</span><span class="chip">Fireblocks</span><span class="chip">D3.js</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Charac</h3><p class="meta">Pharmacy appointment platform<br>Lucida Technologies</p></div>
+<div>
+<p>A platform that connects pharmacists and patients through booked appointments, on web, Android and iOS. It offers video calls for emergencies and in-pharmacy consultations, with multi-session services and follow-ups. Pharmacy admins schedule slots around each pharmacist’s availability.</p>
+<ul>
+<li>Architected the folder structure, modules and reusable components, with responsive screens for web and mobile.</li>
+<li>Integrated AWS Pinpoint for email and SMS, and Angular Calendar for appointment slots.</li>
+<li>Implemented secure JWT and OTP authentication.</li>
+<li>Integrated Stripe payments and Opentok video chat, and built magic links for booking private slots and registration.</li>
+<li>Designed the schema and made API-level decisions, then built the backend APIs in Node.js.</li>
+<li>Connected the NHS publicly funded healthcare system to the Patient module for repeat prescriptions.</li>
+</ul>
+<div class="chips"><span class="chip">Angular 8</span><span class="chip">Ionic 3</span><span class="chip">Node.js</span><span class="chip">MySQL</span><span class="chip">AWS Pinpoint</span><span class="chip">Stripe</span><span class="chip">Opentok</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>CINTRAL</h3><p class="meta">NielsenIQ project files and cost sheets<br>Lucida Technologies</p></div>
+<div>
+<p>A web app for NielsenIQ that helps the client service team get costs and commissions from internal and external vendors, through cost sheets and a vendor flow.</p>
+<ul>
+<li>As Module Lead, migrated folders and files from Google Drive to OneDrive and mapped resource IDs with the Microsoft Graph API.</li>
+<li>Co-designed the database schema, REST APIs and functional flow with the Project Lead.</li>
+<li>Synced database data to Excel cost sheets using Script Lab and the Office Add-in JavaScript API.</li>
+<li>Led the Vendor module, including schema design, API decisions and Node.js backend APIs, and built reusable React components.</li>
+<li>Integrated SSO login with Azure.</li>
+</ul>
+<div class="chips"><span class="chip">React JS</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Microsoft Graph</span><span class="chip">Azure SSO</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>COMPLUS</h3><p class="meta">CRM for quotations and invoices<br>Lucida Technologies</p></div>
+<div>
+<p>A CRM that tracks sales, service and lab machinery items, along with opportunities, quotations, purchase orders and invoices. Revised model prices are stored separately, so older quotations and invoices stay unchanged.</p>
+<ul>
+<li>As Module Lead, built a reusable service that generates downloadable quotations and invoices with jsPDF and Excel libraries.</li>
+<li>Designed the folder structure and modules for maximum reuse.</li>
+<li>Worked with stakeholders to turn business needs into requirements.</li>
+<li>Built reusable components with Angular and PrimeNG.</li>
+</ul>
+<div class="chips"><span class="chip">Angular 6</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MySQL</span><span class="chip">PrimeNG</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Store Insights</h3><p class="meta">Client dashboards<br>Lucida Technologies</p></div>
+<div>
+<p>A single platform that shows dashboards built from NSO 2.0 processed data, designed per client and shown as NVD3 charts.</p>
+<ul>
+<li>Designed responsive dashboards to Nielsen UI standards and mockups.</li>
+<li>Configured reusable widgets with JSON and created chart sets for different clients.</li>
+<li>Built reusable components with PrimeNG.</li>
+</ul>
+<div class="chips"><span class="chip">Angular 4</span><span class="chip">NVD3</span><span class="chip">PrimeNG</span><span class="chip">Bootstrap 3</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Tabloid booking and pamphlet tracking</h3><p class="meta">Company product<br>Ads Information, 2016 – 2017</p></div>
+<div>
+<ul>
+<li>Developed the tabloid booking and pamphlet distribution tracking application as the company’s own product.</li>
+<li>Redesigned the website for the company and its clients.</li>
+</ul>
+<div class="chips"><span class="chip">PHP</span></div>
+</div>
+</article>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Languages</h3><p>JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SCSS</p></div>
+<div><h3>Frontend and mobile</h3><p>Angular 12+, React JS, React Native, Expo, Ionic 3, Bootstrap, PrimeNG, NVD3</p></div>
+<div><h3>Backend and databases</h3><p>Node.js, Express, RESTful APIs, PostgreSQL, MySQL</p></div>
+<div><h3>Firebase</h3><p>Authentication, Cloud Firestore, Realtime Database, Cloud Messaging</p></div>
+<div><h3>Web3</h3><p>Reown, Ethers.js, Fireblocks Wallet</p></div>
+<div><h3>Payments and cloud</h3><p>Stripe, In-App Purchases, AWS Pinpoint, Microsoft Graph API, push notifications with deep links</p></div>
+<div><h3>AI-assisted development</h3><p>Claude Code, GitHub Copilot, MCP connectors</p></div>
+<div><h3>Tools</h3><p>GitHub, GitLab, Bitbucket, VS Code, Cursor, Jira, Confluence</p></div>
+</div>
+<div class="soft">
+<div><h3>Leadership</h3><p>Team leadership, mentoring, technical decisions, ownership of architecture and delivery.</p></div>
+<div><h3>Communication</h3><p>Stakeholder management, requirement gathering, clear technical documentation.</p></div>
+<div><h3>Problem solving</h3><p>Analytical thinking, evaluating integration options, debugging under pressure.</p></div>
+<div><h3>Work style</h3><p>Agile delivery, deadline-driven, accountable, quick to adopt new tools.</p></div>
+</div>
+</div></section>
+
+<section id="awards"><div class="wrap">
+<h2>Recognition</h2>
+<div class="awards">
+<div><div class="years"><span>2019</span><span>2020</span><span>2022</span></div><h3>Best Performer of the Year</h3><p>Awarded three times for major contributions to key projects and clients.</p></div>
+<div><h3>Team leadership</h3><p>Led teams to deliver high-stakes projects on deadline, in agile environments with limited resources.</p></div>
+<div><h3>Modernisation</h3><p>Redesigned existing layouts to meet usability and performance goals, and updated legacy internal practices.</p></div>
+</div>
+<p style="margin:40px 0 0;color:var(--muted)">Education: Master of Computer Applications, B.M.S Institute of Technology &amp; Management (2013 – 2016), and Bachelor of Computer Applications, Bapuji First Grade College (2010 – 2013).<br>Outside work: carrom, cricket, badminton and mythological books.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let’s build something</h2>
+<p>I’m based in Karnataka, India, and work remotely.</p>
+<a class="mail" href="mailto:chethan2136@gmail.com">chethan2136@gmail.com</a>
+<p style="margin-top:20px"><a href="https://www.linkedin.com/in/chethan2136/" target="_blank" rel="noopener">linkedin.com/in/chethan2136</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Chethan K V</div></footer>
+</body>
+</html>
